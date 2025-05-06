@@ -49,7 +49,7 @@ action = function(host, port)
 
     stdnse.print_debug(1, "Raw response received: " .. stdnse.tohex(lines))
     if lines:match("^ESC/VP.net") then
-        output = "ESC/VP.net device detected: "
+        output = "ESC/VP.net device detected"
     else
         output = "No valid ESC/VP.net response detected."
     end
